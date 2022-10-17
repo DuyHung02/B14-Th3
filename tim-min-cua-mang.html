@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a1 = [3, 5, 1, 8, -3, 7, 8]
+    let a2 = [7, 12, 6, 9, 20, 56, 89]
+    let a3 = []
+    let a4 = [0, 0, 0, 0, 0, 0]
+    let min1 = timmin(a1)
+    let min2 = timmin(a2)
+    let min3 = timmin(a3)
+    let min4 = timmin(a4)
+
+    function timmin(b) {
+        if (b.length == 0) {
+            let k = alert(-1);
+            return k;
+        } else {
+            let min = b[0]
+            for (let i = 1; i < b.length; i++) {
+                if (b[i] < min) {
+                    min = b[i];
+                }
+            }
+            let x = alert(min)
+            return x;
+        }
+    }
+</script>
+</body>
+</html>
